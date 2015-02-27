@@ -6,6 +6,7 @@
     height: 120px;
     width: 120px;
 
+    animation: inner-circle 2s 0.5s forwards alternate infinite;
     -webkit-animation: inner-circle 2s 0.5s forwards alternate infinite;
     transition: 0.5s height,width ease;
 
@@ -14,8 +15,8 @@
         animation: none !important;
 
         &::before, &::after {
-            -webkit-animation: none !important;
             animation: none !important;
+            -webkit-animation: none !important;
         }
     }
 
@@ -33,6 +34,7 @@
         content: '';
         box-sizing: border-box;
 
+        animation: circle-pulse 2s 1s infinite;
         -webkit-animation: circle-pulse 2s 1s infinite;
     }
 
@@ -59,6 +61,7 @@
 
             content: url('../SVG/check.svg');
 
+            animation: spinY 2s 0.5s forwards alternate infinite;
             -webkit-animation: spinY 2s 0.5s forwards alternate infinite;
         }
     }
@@ -76,8 +79,8 @@
 
             content: url('../SVG/close.svg');
 
+            animation: spinZ 2s 0.5s forwards alternate infinite;
             -webkit-animation: spinZ 2s 0.5s forwards alternate infinite;
-
         }
     }
 
@@ -94,6 +97,7 @@
 
             content: url('../SVG/info.svg');
 
+            animation: spinX 2s 0.5s forwards alternate infinite;
             -webkit-animation: spinX 2s 0.5s forwards alternate infinite;
         }
     }
@@ -111,6 +115,7 @@
 
             content: url("../SVG/exclamation-triangle.svg");
 
+            animation: spinY 2s 0.5s forwards alternate infinite;
             -webkit-animation: spinY 2s 0.5s forwards alternate infinite;
         }
     }
@@ -128,6 +133,7 @@
 
             content: url('../SVG/question.svg');
 
+            animation: spinZ 2s 0.5s forwards alternate infinite;
             -webkit-animation: spinZ 2s 0.5s forwards alternate infinite;
         }
     }
@@ -145,6 +151,7 @@
 
             content: url('../SVG/refresh.svg');
 
+            animation: spinContinuous 2s 0.5s forwards linear infinite;
             -webkit-animation: spinContinuous 2s 0.5s forwards linear infinite;
         }
     }
